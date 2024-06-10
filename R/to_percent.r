@@ -9,3 +9,4 @@ to_percent <- function(x, digits = 4) {
   x <- x * 100
   return(paste0(format(x, digits = digits), "%"))
 }
+
