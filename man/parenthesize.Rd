@@ -4,7 +4,7 @@
 \alias{parenthesize}
 \title{Convert a 3-vector to range with parenthesis, i.e., 1(2-3) '}
 \usage{
-parenthesize(r)
+parenthesize(r, digits = 3)
 }
 \arguments{
 \item{r}{input vector of length 3}

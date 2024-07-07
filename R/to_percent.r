@@ -17,10 +17,11 @@ to_percent <- function(x, digits = 4) {
 #' @param r input vector of length 3
 #' @export
 
-parenthesize <- function(r) {
-  g <- paste0(round(r[1], 3), "(", round(r[2], 3), "-", round(r[3], 3), ")")
+parenthesize <- function(r, digits = 3) {
+  g <- paste0(
+    round(r[1], digits), "(", round(r[2], digits), "-",
+    round(r[3], digits), ")"
+  )
   return(g)
 }
-
-
 
