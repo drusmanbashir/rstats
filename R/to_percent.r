@@ -19,7 +19,7 @@ to_percent <- function(x, digits = 4) {
 
 parenthesize <- function(r, digits = 3) {
   g <- paste0(
-    round(r[1], digits), "(", round(r[2], digits), "-",
+    round(r[1], digits), " (", round(r[2], digits), "-",
     round(r[3], digits), ")"
   )
   return(g)
