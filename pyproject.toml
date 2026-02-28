@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rstats"
+version = "0.0.0"
+description = "R stats workspace metadata"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+py-modules = []
