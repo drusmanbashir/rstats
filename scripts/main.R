@@ -6,7 +6,7 @@ suppressPackageStartupMessages({
   library(readr)
 })
 
-input_csv <- "/s/fran_storage/projects/kits23/logs/KITS23-SIRIG/case_recorder_compiled.csv"
+input_csv <- "/t/fran_storage/projects/kits23/logs/KITS23-SIRIG/case_recorder_compiled.csv"
 
 raw_df <- read.csv(input_csv, stringsAsFactors = FALSE)
 
