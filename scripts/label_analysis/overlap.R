@@ -11,7 +11,8 @@ library(readr)
 library(dplyr)
 setwd("/home/ub/code/rstats/scripts/label_analysis")
 
-
+# %%
+#SECTION:-------------------- functions--------------------------------------------------------------------------------------
 lesion_stats_one_case <- function(g) {
   gt_ids   <- unique(na.omit(g$gt_label_cc))
   pred_ids <- unique(na.omit(g$pred_label_cc))
@@ -67,7 +68,7 @@ lesion_stats_by_case <- function(df) {
     ungroup()
 }
     
-# %%
+#%%
 # %%
 # folder <-"/t/fran_storage/predictions/lits/ensemble_LITS-408_LITS-385_LITS-383_LITS-357"
 
