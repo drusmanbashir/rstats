@@ -119,4 +119,9 @@ df2 = df %>%
   group_by(case_id) %>%
   summarise(n_all = n(),gt_lesions = sum(!is.na(gt_label_cc)), pred_lesions = sum(!is.na(pred_label_cc)), med_dsc = round(median(dsc,na.rum=TRUE), 2), dsc_overall = first(dsc))
 # %%
+fn_long = "/home/ub/Downloads/ex2.csv"
+df_long = read_csv(fn_long, show_col_types = FALSE)
+
+wide <- df_long |> pivot_wider(id_cols = c(case_id, label), names_from = label, values_from = loss_dice)
+
 # SECTION:-------------------- group by case_id--------------------------------------------------------------------------------------n
